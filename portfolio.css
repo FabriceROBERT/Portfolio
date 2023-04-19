@@ -1,355 +1,305 @@
-body{
+body {
   min-height: 150vh;
   margin: 0;
   /* background-color: rgb(50, 47, 47) ; */
   background-image: url("berchtesgaden.jpg");
- 
-  }
+}
 
 body * {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  box-sizing: border-box;
 }
 
-
-nav:hover{
+nav:hover {
   cursor: pointer;
-
 }
 
-
-  nav{
-    flex-wrap: wrap;
+nav {
+  flex-wrap: wrap;
   padding: 10px;
   margin: 0;
-  background-color: rgb(35, 35, 35); 
+  background-color: rgb(35, 35, 35);
   position: fixed;
   width: 100%;
   height: 65px;   
-  top: -90px;
+  top: -80px;
   transition: 0.5s ;
   z-index: 1;
   font-weight: 600;
   font-size: 20px;
- 
+}
+
+@media screen and (max-width: 1000px) {
+  .navul {
+    width: 100%;
+    height: 45px;
+    font-size: 15px;
+  }
 
 
 }
 
-@media screen and (max-width: 840px){
-	.navul {
-		width: 100%;
-		height: 85px;   
-		font-size:18px;
-		
-  }
-
-  #ButtonAboutMe {
-	width: 40%;
-	
-  }
-
-  #voirplus {
-	width: 40%;
-  }
-  .text-box3 {
-	font-size: 20px;
-  }
-
-  h1 {
-	font-size: 10px;
-  }
-
-
-  }
-
-
-.cv{
+.cv {
   color: black;
 }
 
-
-span{
+span {
   color: white;
   font-size: 2.5em;
 }
 
+a:hover {
+  text-decoration: none;
+  color: skyblue;
+}
 
-a:hover 
-{ 
- text-decoration:none; 
- color: skyblue;
-} 
-
-
-a
-{ 
- text-decoration:none; 
- color: white
-} 
+a {
+  text-decoration: none;
+  color: white;
+}
 
 /* Liens nav */
 .c2 {
-  color:skyblue;
+  color: skyblue;
 }
 
-
-
-
 .c1 {
-  color:skyblue;
+  color: skyblue;
 }
 /*  */
 
-.titre{
-  background-color:  rgb(35, 35, 35);
+.titre {
+  background-color: rgb(35, 35, 35);
   position: absolute;
   margin-top: 30%;
   left: 0px;
   padding: 30px;
-  border:  10px 5px 5px solid ;
-
-
+  border: 10px 5px 5px solid;
 }
 
-.titre::before{
- box-shadow: 10px 5px 5px red;
+.titre::before {
+  box-shadow: 10px 5px 5px red;
 }
-
 
 .m13 {
+  box-sizing: border-box;
   font-size: 3em;
   color: white;
   padding-top: 5em;
 }
 
-
 progress {
-width: 70%;
-font-size: 40px;
-color: skyblue;
+  min-width: 80%;
+  width: 70%;
+  font-size: 40px;
+  color: skyblue;
 }
-
 
 .fit-picture {
-	padding: 60px;
+  padding: 60px;
 }
 
-
-.description{
-	margin-top: -200px;
-	position: relative;
-	height: 200px;
-	background-color: #0075ff;
-	opacity: 0;
-
+.description {
+  margin-top: -200px;
+  position: relative;
+  height: 200px;
+  background-color: #0075ff;
+  opacity: 0;
 }
 
-
-.description:hover{
-	padding-top: 5px;
-	margin-top: -200px;
-	position: relative;
-	height: 200px;
-	background-color: #232323;
-	opacity: 0.8;
-	transition: 2s;
-	animation: slide-upbox 1s;
-	cursor: pointer;
-
+.description:hover {
+  padding-top: 5px;
+  margin-top: -200px;
+  position: relative;
+  height: 200px;
+  background-color: #232323;
+  opacity: 0.8;
+  transition: 2s;
+  animation: slide-upbox 1s;
+  cursor: pointer;
 }
-
 
 /* Projets dans aboutme */
 .box {
   background-color: #232323;
- 
+
   height: 500px;
   margin: 20px;
   width: 25%;
   color: white;
-  font-weight: 600  ;
+  font-weight: 600;
   border: double white 12px;
   text-align: center;
-
 }
-
 
 /* .box:hover {
 	opacity: 0.8;
 	animation: slide-up 1s;
 } */
 
-
 /* Progress Bar */
 .progress-Office {
-	position: relative;
-	width: 70%;
-	height: 1.5em;
-	background-color: rgb(255, 255, 255);
-	border-radius: 2em;
-	color: white;
+  position: relative;
+  width: 70%;
+  height: 1.5em;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2em;
+  color: white;
 }
 
 .progress-Office::before {
-	content: attr(data-label);
-	display: flex;
-	align-items: center;
-	position: absolute;
-	left: 0;
-	top: 0;
-	bottom: 1.5em;
-	width: calc(var(--width, 0) * 1%);
-	min-width: 2rem;
-	max-width: calc(90% - 1em);
-	background-color: #0075ff;
-	border-radius: 1em;
-	padding: 12px
+  content: attr(data-label);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 1.5em;
+  width: calc(var(--width, 0) * 1%);
+  min-width: 2rem;
+  max-width: calc(90% - 1em);
+  background-color: #0075ff;
+  border-radius: 1em;
+  padding: 12px;
 }
 
-
 .progress-Css {
-	position: relative;
-	width: 70%;
-	height: 1.5em;
-	background-color: rgb(255, 255, 255);
-	border-radius: 2em;
-	color: white;
+  position: relative;
+  width: 70%;
+  height: 1.5em;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2em;
+  color: white;
 }
 
 .progress-Css::before {
-	content: attr(data-label);
-	display: flex;
-	align-items: center;
-	position: absolute;
-	left: 0;
-	top: 0;
-	bottom: 1.5em;
-	width: calc(var(--width, 0) * 1%);
-	min-width: 2rem;
-	max-width: calc(80% - 1em);
-	background-color: #0075ff;
-	border-radius: 1em;
-	padding: 12px
+  content: attr(data-label);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 1.5em;
+  width: calc(var(--width, 0) * 1%);
+  min-width: 2rem;
+  max-width: calc(80% - 1em);
+  background-color: #0075ff;
+  border-radius: 1em;
+  padding: 12px;
 }
 
-
 .progress-Js {
-	position: relative;
-	width: 70%;
-	height: 1.5em;
-	background-color: rgb(255, 255, 255);
-	border-radius: 2em;
-	color: white;
+  position: relative;
+  width: 70%;
+  height: 1.5em;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2em;
+  color: white;
 }
 
 .progress-Js::before {
-	content: attr(data-label);
-	display: flex;
-	align-items: center;
-	position: absolute;
-	left: 0;
-	top: 0;
-	bottom: 1.5em;
-	width: calc(var(--width, 0) * 1%);
-	min-width: 2rem;
-	max-width: calc(20% - 1em);
-	background-color: #0075ff;
-	border-radius: 1em;
-	padding: 12px
+  content: attr(data-label);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 1.5em;
+  width: calc(var(--width, 0) * 1%);
+  min-width: 2rem;
+  max-width: calc(20% - 1em);
+  background-color: #0075ff;
+  border-radius: 1em;
+  padding: 12px;
 }
 
-
 .progress-Mysql {
-	position: relative;
-	width: 70%;
-	height: 1.5em;
-	background-color: rgb(255, 255, 255);
-	border-radius: 2em;
-	color: white;
+  position: relative;
+  width: 70%;
+  height: 1.5em;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2em;
+  color: white;
 }
 
 .progress-Mysql::before {
-	content: attr(data-label);
-	display: flex;
-	align-items: center;
-	position: absolute;
-	left: 0;
-	top: 0;
-	bottom: 1.5em;
-	width: calc(var(--width, 0) * 1%);
-	min-width: 2rem;
-	max-width: calc(50% - 1em);
-	background-color: #0075ff;
-	border-radius: 1em;
-	padding: 12px
+  content: attr(data-label);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 1.5em;
+  width: calc(var(--width, 0) * 1%);
+  min-width: 2rem;
+  max-width: calc(50% - 1em);
+  background-color: #0075ff;
+  border-radius: 1em;
+  padding: 12px;
 }
 
-
 .progress-Php {
-	position: relative;
-	width: 70%;
-	height: 1.5em;
-	background-color: rgb(255, 255, 255);
-	border-radius: 2em;
-	color: white;
+  position: relative;
+  width: 70%;
+  height: 1.5em;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2em;
+  color: white;
 }
 
 .progress-Php::before {
-	content: attr(data-label);
-	display: flex;
-	align-items: center;
-	position: absolute;
-	left: 0;
-	top: 0;
-	bottom: 1.5em;
-	width: calc(var(--width, 0) * 1%);
-	min-width: 2rem;
-	max-width: calc(60% - 1em);
-	background-color: #0075ff;
-	border-radius: 1em;
-	padding: 12px
+  content: attr(data-label);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 1.5em;
+  width: calc(var(--width, 0) * 1%);
+  min-width: 2rem;
+  max-width: calc(60% - 1em);
+  background-color: #0075ff;
+  border-radius: 1em;
+  padding: 12px;
 }
 
-
 .progress-Flutter {
-	position: relative;
-	width: 70%;
-	height: 1.5em;
-	background-color: rgb(255, 255, 255);
-	border-radius: 2em;
-	color: white;
+  position: relative;
+  width: 70%;
+  height: 1.5em;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2em;
+  color: white;
 }
 
 .progress-Flutter::before {
-	content: attr(data-label);
-	display: flex;
-	align-items: center;
-	position: absolute;
-	left: 0;
-	top: 0;
-	bottom: 1.5em;
-	width: calc(var(--width, 0) * 1%);
-	min-width: 2rem;
-	max-width: calc(30% - 1em);
-	background-color: #0075ff;
-	border-radius: 1em;
-	padding: 12px
+  content: attr(data-label);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 1.5em;
+  width: calc(var(--width, 0) * 1%);
+  min-width: 2rem;
+  max-width: calc(30% - 1em);
+  background-color: #0075ff;
+  border-radius: 1em;
+  padding: 12px;
 }
 /* Div bienvenue page d'acceuil */
 
 .ml2 {
-
   font-size: 4.5em;
   text-align: left;
   animation: slide-right 1.5s;
-
-
 }
 /*  */
 
@@ -357,33 +307,27 @@ color: skyblue;
   color: black;
 }
 
-
-.voirplus{
+.voirplus {
   background-color: #76d6f0;
   width: 15%;
   text-align: center;
   margin: 10px 0px 20px 10px;
   padding: 20px;
   font-weight: 500;
-  border-radius: 20px; 
+  border-radius: 20px;
 }
 
+.voirplus:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
 
-
- .voirplus:hover{
-    opacity: 0.8;
-    cursor: pointer;
-	transition-duration: 0.4s;
-  }
-
-
-li:hover{
+li:hover {
   color: skyblue;
- 
 }
 
-
-li{
+li {
   list-style: none;
   color: rgb(255, 255, 255);
 }
@@ -395,36 +339,33 @@ li{
   padding-right: 80px;
 }
 
-
 .options {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .sisr {
-	background-color: white;
-	height: 500px;
-	padding: 30px;
-	margin: 50px;
-	width: 35%;
-	justify-content: center;
-	text-align: center;
+  background-color: white;
+  height: 500px;
+  padding: 30px;
+  margin: 50px;
+  width: 35%;
+  justify-content: center;
+  text-align: center;
 }
 .slam {
-	background-color: white;
-	height: 30px;
-	padding: 30px;
-	margin: 20px;
+  background-color: white;
+  height: 30px;
+  padding: 30px;
+  margin: 20px;
 }
 
-
 .stages {
-	display: flex;  
-	flex-wrap: wrap;
-   justify-content: center;
-
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 h1 {
   text-align: center;
@@ -433,173 +374,182 @@ h1 {
 
 /* SLIDE ANIMANITIONS */
 
-.text-box{
-	animation: slide-up2 2.5s;
+.text-box {
+  animation: slide-up2 2.5s;
 }
-.text-box2{
-	animation: slide-right 3s;
+.text-box2 {
+  animation: slide-right 3s;
 }
-.text-box3{
-	animation: slide-up 2s;
+.text-box3 {
+  animation: slide-up 2s;
 }
-.text-box4{
-	animation: slide-up3 2s;
+.text-box4 {
+  animation: slide-up3 2s;
 }
 
 @keyframes slide-up {
-	from {
-		opacity: 0.2;
-		line-height: 150px;
-	}
-	to  {
-		opacity: 1;
-		line-height: 53px;
-	}
+  from {
+    opacity: 0.2;
+    line-height: 150px;
+  }
+  to {
+    opacity: 1;
+    line-height: 53px;
+  }
 }
-
 
 @keyframes slide-up3 {
-	from {
-		opacity: 0.2;
-		line-height: 150px;
-	}
-	to  {
-		opacity: 1;
-		line-height: 40.3px;
-	}
+  from {
+    opacity: 0.2;
+    line-height: 150px;
+  }
+  to {
+    opacity: 1;
+    line-height: 40.3px;
+  }
 }
-
 
 @keyframes slide-up2 {
-	from {
-		opacity: 0.2;
-		line-height: 150px;
-	}
-	to  {
-		opacity: 1;
-		line-height: 40px;
-	}
+  from {
+    opacity: 0.2;
+    line-height: 150px;
+  }
+  to {
+    opacity: 1;
+    line-height: 40px;
+  }
 }
-
 
 @keyframes slide-upbox {
-	from {
-		opacity: 0.2;
-		line-height: 120px;
-	}
-	to  {
-		opacity: 0.8;
-		line-height: 20px;
-	}
+  from {
+    opacity: 0.2;
+    line-height: 120px;
+  }
+  to {
+    opacity: 0.8;
+    line-height: 20px;
+  }
 }
-
 
 @keyframes slide-right {
-	from {
-	  margin-left: -100%;
-	  width: 300%; 
-	  opacity: 0.2;
-	}
-  
-	to {
-	  margin-left: 0%;
-	  width: 100%;
-	  opacity: 1 ;
-	}
+  from {
+    margin-left: -100%;
+    width: 300%;
+    opacity: 0.2;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+    opacity: 1;
+  }
 }
-  /* Options slam et sisr dans bts sio */
-section{
-	min-height: 50vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+/* Options slam et sisr dans bts sio */
+section {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .container {
+  margin: 150px;
+}
+section h1 {
+  font-size: 3rem;
+  margin: 20px;
+  color: violets;
+}
+section h2 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+section .text-container {
+  display: flex;
+}
+
+section .text-container .text-boxN2 {
+  margin: 20px;
+  padding: 60px;
+  height: 800px;
+  background: #76d6f0;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+section .text-container .text-box h3 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  section h1 {
+    font-size: 2rem;
+    text-align: center;
   }
-
-
-  section .container{
-	margin:150px;
+  section .text-container {
+    flex-direction: column;
   }
-  section h1{
-	font-size: 3rem;
-	margin: 20px;
-	color: violets;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(200px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.socialmediaicons {
+  font-size: 25px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contacttitle {
+  text-align: center;
+  margin-top: 0;
+  padding-bottom: 30px;
+}
+
+#a img,
+#b img,
+#c img,
+#d img,
+#e img,
+#f img,
+#g img,
+#h img,
+#i img {
+  width: 100%;
+  height: auto;
+}
+@supports (object-fit: cover) {
+  #a img,
+  #b img,
+  #c img,
+  #d img,
+  #e img,
+  #f img,
+  #g img,
+  #h img,
+  #i img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
   }
-  section h2{
-	font-size: 40px;
-	text-align: center;
-	text-transform: uppercase;
-  }
-  section .text-container{
-	 display: flex;
-  }
+}
 
-
-  section .text-container .text-boxN2{
-	margin: 20px;
-	padding: 60px;
-	height: 800px;
-	background: #76d6f0;
-	font-weight: 500;
-	font-size: 20PX;
-  }
-
-
-  section .text-container .text-box h3{
-	font-size: 30px;
-	text-align: center;
-	text-transform: uppercase;
-	margin-bottom: 10px;
-  }
-  
-  @media (max-width: 900px){
-	section h1{
-	  font-size: 2rem;
-	  text-align: center;
-	}
-	section .text-container{
-	  flex-direction: column;
-	}
-  }
-  
-  .reveal{
-	position: relative;
-	transform: translateY(200px);
-	opacity: 0;
-	transition: 2s all ease;
-  }
-  
-  .reveal.active{
-	transform: translateY(0);
-	opacity: 1}
-
-	.socialmediaicons {
-		font-size: 25px;
-
-		display: flex;
-	flex-wrap: wrap;
-		justify-content: space-around;
-	}
-
-	.contacttitle {
-		text-align: center;
-		margin-top: 0;
-		padding-bottom: 30px;
-	}
-
-	  #a img, #b img, #c img, #d img, #e img, #f img, #g img, #h img, #i img{
-		width: 100%;
-		height: auto;
-	  }
-	  @supports(object-fit: cover){
-		  #a img, #b img, #c img, #d img, #e img, #f img, #g img, #h img, #i img{
-			height: 100%;
-			object-fit: cover;
-			object-position: center center;
-		  }
-	  }
-
-
-	  /* #b img{
+/* #b img{
 		width: 100%;
 		height: auto;
 	  }
